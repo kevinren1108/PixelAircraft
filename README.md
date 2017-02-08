@@ -1,5 +1,5 @@
 # QtGameLearn
 
-Study Plan
-Qt widget Game
-Qt widget Application
+Study Plan 
+  	1.Qt widget Game
+ 		2.Qt widget Application
