@@ -1,14 +1,6 @@
 # QtGameLearn
 
-Study Plan 
-  	
-    
- 1.Qt widgetGame
- 
- 
- 
- 2.Qt widget Application
-
-
-
 Compile on Qt 5.8.0
+
+Release:
+https://github.com/kevinren1108/QtGameLearn/blob/master/1949.zip
