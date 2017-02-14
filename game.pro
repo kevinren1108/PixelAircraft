@@ -4,7 +4,8 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui \
+         multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -24,11 +25,25 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp \
-    myRect.cpp
+    myRect.cpp \
+    bullet.cpp \
+    enemy.cpp \
+    game.cpp \
+    score.cpp \
+    player.cpp \
+    health.cpp
 
 HEADERS  += \
-    myRect.h
+    myRect.h \
+    bullet.h \
+    enemy.h \
+    game.h \
+    score.h \
+    player.h \
+    health.h
 
 FORMS    +=
 
 DISTFILES +=
+
+RESOURCES +=
