@@ -9,4 +9,4 @@ Todo
 
 	
 Release:
-https://github.com/kevinren1108/QtGameLearn/blob/master/1949.zip
+https://github.com/kevinren1108/QtGameLearn/blob/master/release.zip
