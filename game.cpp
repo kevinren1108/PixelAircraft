@@ -6,6 +6,7 @@
 #include <QMediaPlayer>
 #include <QBrush>
 #include <QImage>
+#include <QMediaPlaylist>
 
 Game::Game(QWidget *parent)
 {
@@ -44,10 +45,22 @@ Game::Game(QWidget *parent)
     QObject::connect(timer,SIGNAL(timeout()),player,SLOT(spawn()));
     timer->start(2000);
 
-    QMediaPlayer * music = new QMediaPlayer();
+    /*QMediaPlayer * music = new QMediaPlayer();
     music->setMedia(QUrl("qrc:/sounds/bgsound.mp3"));
-    music->play();
+    //music->play();
 
+    while(music->state() == QMediaPlayer::StoppedState)
+    {
+        music->play();
+    }*/
+
+    QMediaPlaylist *playlist = new QMediaPlaylist();
+    playlist->addMedia(QUrl("qrc:/sounds/bgsound.mp3"));
+    playlist->setPlaybackMode(QMediaPlaylist::Loop);
+
+    QMediaPlayer *music = new QMediaPlayer();
+    music->setPlaylist(playlist);
+    music->play();
 
     show();
 }

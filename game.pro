@@ -46,4 +46,5 @@ FORMS    +=
 
 DISTFILES +=
 
-RESOURCES +=
+RESOURCES += \
+    rec.qrc
